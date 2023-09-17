@@ -94,6 +94,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Loc\fr.json" />
+    <None Remove="Loc\zh.json" />
+    <EmbeddedResource Include="Loc\zh.json" />
     <EmbeddedResource Include="Loc\fr.json" />
     <None Remove="Loc\en.json" />
     <EmbeddedResource Include="Loc\en.json" />
