@@ -398,5 +398,45 @@
   "NoPossibleSongs": {
     "message": "未找到符合条件的乐谱。",
     "description": "BGMManager.PlayRandomSong"
+  },
+  "ShowSongTitleBar": {
+    "message": "在播放器标题栏显示当前播放的乐谱",
+    "description": "BGMManager.PlayRandomSong"
+  },
+  "ShowNowPlayingChat": {
+    "message": "在当前播放的乐谱更换时，在消息窗口发送一条提示",
+    "description": "BGMManager.PlayRandomSong"
+  },
+  "ShowSongServerInfo": {
+    "message": "在服务器信息栏显示当前播放的乐谱",
+    "description": "BGMManager.PlayRandomSong"
+  },
+  "ShowSongIdServerInfo": {
+    "message": "在服务器信息栏显示当前播放乐谱的ID",
+    "description": "BGMManager.PlayRandomSong"
+  },
+  "HandleSpecialModes": {
+    "message": "显示战斗音乐与坐骑音乐的乐谱",
+    "description": "BGMManager.PlayRandomSong"
+  },
+  "ShowAltLangTitles": {
+    "message": "在提示中显示相应语言的乐谱名称",
+    "description": "BGMManager.PlayRandomSong"
+  },
+  "UseClientLangInServerInfo": {
+    "message": "为服务器信息栏的乐谱名称使用客户端语言，而非卫月语言",
+    "description": "BGMManager.PlayRandomSong"
+  },
+  "UseClientLangInChat": {
+    "message": "为 Orchestrion 发送到消息窗口的乐谱名称使用客户端语言，而非卫月语言",
+    "description": "BGMManager.PlayRandomSong"
+  },
+  "ShowMiniPlayer": {
+    "message": "显示迷你播放器界面",
+    "description": "BGMManager.PlayRandomSong"
+  },
+  "LockMiniPlayer": {
+    "message": "锁定迷你播放器界面",
+    "description": "BGMManager.PlayRandomSong"
   }
 }

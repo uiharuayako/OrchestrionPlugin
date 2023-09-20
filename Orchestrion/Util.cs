@@ -40,9 +40,14 @@ public static class Util
 		matchesSearch |= song.Strings["ja"].Name.ToLower().Contains(searchText.ToLower());
 		matchesSearch |= song.Strings["ja"].AlternateName.ToLower().Contains(searchText.ToLower());
 		matchesSearch |= song.Strings["ja"].SpecialModeName.ToLower().Contains(searchText.ToLower());
-		
-		// Id check
-		matchesSearch |= song.Id.ToString().Contains(searchText);
+
+        // Zh title check
+        matchesSearch |= song.Strings["zh"].Name.ToLower().Contains(searchText.ToLower());
+        matchesSearch |= song.Strings["zh"].AlternateName.ToLower().Contains(searchText.ToLower());
+        matchesSearch |= song.Strings["zh"].SpecialModeName.ToLower().Contains(searchText.ToLower());
+
+        // Id check
+        matchesSearch |= song.Id.ToString().Contains(searchText);
 		
 		// Localized addtl info check
 		var strings = song.Strings["en"];
@@ -54,8 +59,8 @@ public static class Util
 	}
 
 	public static string Lang()
-	{
-		return DalamudApi.PluginInterface.UiLanguage;
+    {
+        return OrchestrionPlugin.SongListLang;
 	}
 
 	public static string AltLang()

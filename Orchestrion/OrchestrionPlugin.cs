@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using Dalamud.Game.Command;
 using Dalamud.Game.Text;
 using Dalamud.Plugin;
@@ -31,8 +32,10 @@ public class OrchestrionPlugin : IDalamudPlugin
 	private const string NativeNowPlayingPrefix = "♪ ";
 
 	public static ImFontPtr LargeFont { get; private set; }
+    public static string SongListLang;
+    public static List<string> AvaLanguages = new() { "en", "de", "fr", "ja", "zh" };
 
-	public string Name => ConstName;
+    public string Name => ConstName;
 
 	private readonly WindowSystem _windowSystem;
 	private readonly MiniPlayerWindow _miniPlayerWindow;
@@ -47,8 +50,8 @@ public class OrchestrionPlugin : IDalamudPlugin
 	{
 		DalamudApi.Initialize(pluginInterface);
 		LanguageChanged(pluginInterface.UiLanguage);
-		
-		_dtrEntry = DalamudApi.DtrBar.Get(ConstName);
+        SongListLang = pluginInterface.UiLanguage;
+        _dtrEntry = DalamudApi.DtrBar.Get(ConstName);
 		_dtrEntry.Shown = Configuration.Instance.ShowSongInNative;
 
 		BGMAddressResolver.Init();

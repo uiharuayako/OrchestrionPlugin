@@ -10,7 +10,7 @@ namespace Orchestrion.Persistence;
 
 public class SongList
 {
-    private const string SheetPath = @"https://docs.google.com/spreadsheets/d/1qAkxPiXWF-EUHbIXdNcO-Ilo2AwLnqvdpW9tjKPitPY/gviz/tq?tqx=out:csv&sheet={0}";
+    private const string SheetPath = @"https://docs.google.com/spreadsheets/d/1cDoaCtSU2BF84QVNV3krMTEGAJwv5rBEElPYKpr_67Q/gviz/tq?tqx=out:csv&sheet={0}";
     private const string SheetFileName = "xiv_bgm_{0}.csv";
     private readonly Dictionary<int, Song> _songs;
     private readonly HttpClient _client = new();
@@ -31,6 +31,7 @@ public class SongList
             LoadLangSheet(GetRemoteSheet("ja"), "ja");
             LoadLangSheet(GetRemoteSheet("de"), "de");
             LoadLangSheet(GetRemoteSheet("fr"), "fr");
+            LoadLangSheet(GetRemoteSheet("zh"), "zh");
         }
         catch (Exception e)
         {
@@ -40,6 +41,7 @@ public class SongList
             LoadLangSheet(GetLocalSheet("ja"), "ja");
             LoadLangSheet(GetLocalSheet("de"), "de");
             LoadLangSheet(GetLocalSheet("fr"), "fr");
+            LoadLangSheet(GetLocalSheet("zh"), "zh");
         }
     }
 

@@ -1,4 +1,5 @@
 ﻿using CheapLoc;
+using Dalamud;
 using Dalamud.Interface;
 using Dalamud.Interface.Colors;
 using Dalamud.Interface.Windowing;
@@ -85,7 +86,27 @@ public class SettingsWindow : Window
         ImGui.PushFont(OrchestrionPlugin.LargeFont);
         ImGui.Text(Loc.Localize("LocSettings", "Localization Settings"));
         ImGui.PopFont();
-
+        if (ImGui.BeginCombo("Song Language", OrchestrionPlugin.SongListLang))
+        {
+            foreach (var lang in OrchestrionPlugin.AvaLanguages)
+            {
+                if (ImGui.Selectable(lang))
+                {
+                    OrchestrionPlugin.SongListLang = lang;
+                }
+            }
+            ImGui.EndCombo();
+        }
+        if (ImGui.IsItemHovered()&& OrchestrionPlugin.SongListLang.Equals("zh"))
+        {
+            ImGui.SetTooltip("中文本地化说明：\n" +
+                             "歌曲名称后面带一个*表示游戏内可以获得对应乐谱（可以在播放列表查看获取方式）\n" +
+                             "有两个*表示这个翻译并非来自官方\n" +
+                             "本插件的汉化由多位用户共同完成！特别感谢为本插件本地化做出贡献的用户们\n" +
+                             "UI:cyf2023(DC)\n" +
+                             "汉化列表:ui.haru .firekiss .redwol malisang_24312 yuzai2023 kimika_o aito_yukiko youwillknowme shinnosuke2675(DC)\n" +
+                             "日化列表:MisaUo(GitHub)\n");
+        }
         Checkbox("ShowAltLangTitles", 
             "Show alternate language song titles in tooltips", 
             () => Configuration.Instance.ShowAltLangTitles, 
