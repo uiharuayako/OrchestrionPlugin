@@ -280,11 +280,11 @@
     "description": "BgmTooltip.DrawBgmTooltip"
   },
   "AlternateTitleColon": {
-    "message": "替代标题：",
+    "message": "其他语言名称：",
     "description": "BgmTooltip.DrawBgmTooltip"
   },
   "SpecialModeTitleColon": {
-    "message": "特殊模式标题：",
+    "message": "特殊模式名称：",
     "description": "BgmTooltip.DrawBgmTooltip"
   },
   "LocationColon": {
