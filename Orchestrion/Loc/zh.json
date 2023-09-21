@@ -68,7 +68,7 @@
     "description": "OrchestrionPlugin.PrintHelp"
   },
   "HelpStopSong": {
-    "message": "停止正在播放的乐谱，替换的乐谱，播放列表，或者深层迷宫模式。",
+    "message": "停止正在播放的乐谱、替换乐谱、播放列表以及深层迷宫模式。",
     "description": "OrchestrionPlugin.PrintHelp"
   },
   "HelpDDModeStart": {
@@ -120,7 +120,7 @@
     "description": "OrchestrionPlugin.PrintHelp"
   },
   "NowPlayingEcho": {
-    "message": "正在播放 <i>{0}</i>。",
+    "message": "正在播放 <i>{0}</i> 。",
     "description": "OrchestrionPlugin.UpdateChat"
   },
   "CreateNewPlaylist": {
@@ -156,11 +156,11 @@
     "description": "SettingsWindow.Draw"
   },
   "MiniPlayerOpacity": {
-    "message": "迷你播放器不透明度",
+    "message": "迷你播放器背景不透明度",
     "description": "SettingsWindow.Draw"
   },
   "DDModeDescription": {
-    "message": "深层迷宫模式会在切换乐谱时从所有乐谱中或者指定的播放列表中随机播放乐谱。",
+    "message": "深层迷宫模式：每当需要切换乐谱时，从所有乐谱中或者指定的播放列表中随机播放乐谱。",
     "description": "MainWindow.DrawDeepDungeonModeSelector"
   },
   "DDPlaylistAll": {
@@ -276,7 +276,7 @@
     "description": "BgmTooltip.DrawBgmTooltip"
   },
   "TitleColon": {
-    "message": "标题：",
+    "message": "名称：",
     "description": "BgmTooltip.DrawBgmTooltip"
   },
   "AlternateTitleColon": {
@@ -288,7 +288,7 @@
     "description": "BgmTooltip.DrawBgmTooltip"
   },
   "LocationColon": {
-    "message": "位置：",
+    "message": "乐谱地图：",
     "description": "BgmTooltip.DrawBgmTooltip"
   },
   "Unknown": {
@@ -356,15 +356,15 @@
     "description": "RenderableSongList.DrawCopyContentSubmenu"
   },
   "SongTitle": {
-    "message": "乐谱标题",
+    "message": "乐谱名称",
     "description": "RenderableSongList.DrawCopyContentSubmenu"
   },
   "SongAltTitle": {
-    "message": "乐谱备选标题",
+    "message": "乐谱其他语言名称",
     "description": "RenderableSongList.DrawCopyContentSubmenu"
   },
   "SongSpcModeTitle": {
-    "message": "乐谱特殊模式标题",
+    "message": "乐谱特殊模式名称",
     "description": "RenderableSongList.DrawCopyContentSubmenu"
   },
   "SongLocation": {
@@ -404,7 +404,7 @@
     "description": "BGMManager.PlayRandomSong"
   },
   "ShowNowPlayingChat": {
-    "message": "在当前播放的乐谱更换时，在消息窗口发送一条提示",
+    "message": "当播放的乐谱更换时，在消息窗口发送一条提示",
     "description": "BGMManager.PlayRandomSong"
   },
   "ShowSongServerInfo": {
@@ -412,7 +412,7 @@
     "description": "BGMManager.PlayRandomSong"
   },
   "ShowSongIdServerInfo": {
-    "message": "在服务器信息栏显示当前播放乐谱的ID",
+    "message": "在服务器信息栏显示当前播放的乐谱的ID",
     "description": "BGMManager.PlayRandomSong"
   },
   "HandleSpecialModes": {
@@ -420,7 +420,7 @@
     "description": "BGMManager.PlayRandomSong"
   },
   "ShowAltLangTitles": {
-    "message": "在提示中显示相应语言的乐谱名称",
+    "message": "在提示中显示不同语言的乐谱名称（目前显示乐谱的英文名称）",
     "description": "BGMManager.PlayRandomSong"
   },
   "UseClientLangInServerInfo": {
