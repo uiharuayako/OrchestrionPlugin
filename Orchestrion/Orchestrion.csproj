@@ -84,6 +84,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>xiv_bgm_ja.csv</TargetPath>
     </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Data\xiv_bgm_zh.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>xiv_bgm_zh.csv</TargetPath>
+    </ContentWithTargetPath>
     <ContentWithTargetPath Include="Data\xiv_bgm_metadata.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>xiv_bgm_metadata.csv</TargetPath>
@@ -99,5 +103,11 @@
     <EmbeddedResource Include="Loc\en.json" />
     <None Remove="Loc\it.json" />
     <EmbeddedResource Include="Loc\it.json" />
+    <None Remove="Loc\zh.json" />
+    <EmbeddedResource Include="Loc\zh.json" />
+    <None Remove="Loc\ja.json" />
+    <EmbeddedResource Include="Loc\ja.json" />
+    <None Remove="Loc\de.json" />
+    <EmbeddedResource Include="Loc\de.json" />
   </ItemGroup>
 </Project>
